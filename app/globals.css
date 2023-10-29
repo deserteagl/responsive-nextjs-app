@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,4 +25,48 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+@layer utilities {
+.flexCenter{
+  @apply flex items-center justify-center;
+}
+.flexBetween{
+  @apply flex items-center justify-between;
+}
+.padding-container {
+    @apply px-6 lg:px-20 2xl:px-0;
+  }
+.max-container {
+  @apply mx-auto max-w-[1440px];
+} 
+.hero-map {
+  @apply absolute right-0 top-0 h-screen w-screen bg-cover
+  bg-center md:right-28 xl:top-60;
+}
+.regular-14{
+  @apply text-[14px] font-[400];
+
+}
+.regular-16 {
+  @apply text-[16px] font-[400];
+}
+.regular-20 {
+  @apply text-[20px] font-[400];
+}
+
+.bold-16 {
+  @apply text-[16px] font-[700];
+}
+.bold-20 {
+  @apply text-[20px] font-[700];
+}
+.bold-52 {
+  @apply text-[52px] font-[700] leading-[120%];
+}
+.bold-88 {
+  @apply text-[88px] font-[700] leading-[120%];
+}
+.btn-white{
+  @apply border-black bg-black px-8 py-3 text-gray-100;
+}
 }
